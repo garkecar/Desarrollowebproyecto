@@ -1,128 +1,18 @@
-/* Estilo general */
+@import url("https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css");
+@import url("https://unpkg.com/aos@2.3.1/dist/aos.css");
 body {
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #a71313;
+  background-color: #cc2323;
   color: #333;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   overflow-x: hidden;
+  transition: background-color 0.3s ease-in-out;
 }
 
-/* Encabezado (Bootstrap) */
-header {
-  padding: 0;
-}
-
-/* Estilo adicional para encabezado personalizado */
-.navbar {
-  padding: 10px 0;
-}
-
-/* Estilo para títulos */
-h1 {
-  text-align: center;
-  color: #0d6efd;
-}
-
-h2 {
-  text-align: center;
-  text-decoration: underline;
-  color: #0a58ca;
-}
-
-h3 {
-  text-align: center;
-  text-decoration: underline;
-  color: #6f42c1;
-}
-
-section {
-  margin-bottom: 20px;
-}
-
-/* Estilo para imágenes */
-.imageninicio {
-  max-width: 80%;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 8px;
-}
-
-/* Galería */
-table {
-  table-layout: fixed;
-  width: 100%;
-  border-collapse: collapse;
-  border: 3px solid purple;
-}
-
-td {
-  background-color: #f1f1f1;
-  padding: 5px;
-}
-
-td img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-/* Estilo para el formulario */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-label {
-  font-weight: bold;
-}
-
-input,
-textarea,
-button {
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button {
-  background-color: #0d6efd;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0a58ca;
-}
-
-/* Estilo para el footer */
-footer {
-  background-color: #212529;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  width: 100%;
-  position: relative;
-  margin-top: auto;
-}
-
-/* Contenedor principal */
 main {
   max-width: 1200px;
   margin: 0 auto;
@@ -136,14 +26,74 @@ main {
   justify-content: center;
 }
 
-/* Responsive extra */
-@media (max-width: 768px) {
-  .navbar-nav {
-    flex-direction: column !important;
-    align-items: center;
-  }
-
-  .imageninicio {
-    max-width: 100%;
-  }
+footer {
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  position: relative;
+  margin-top: auto;
 }
+
+h1 {
+  text-align: center;
+  color: #e63946;
+  animation: fadeInDown 1s;
+}
+
+h2 {
+  text-align: center;
+  color: #0a58ca;
+  text-decoration: underline;
+  animation: fadeIn 1.5s;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.imageninicio {
+  max-width: 80%;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+.imageninicio:hover {
+  transform: scale(1.05);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  animation: fadeInUp 1s;
+}
+form label {
+  font-weight: bold;
+}
+form input,
+form textarea,
+form button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+form button:hover {
+  background-color: rgb(209.5426008969, 26.4573991031, 40.2152466368);
+}
+
+/*# sourceMappingURL=style.css.map */

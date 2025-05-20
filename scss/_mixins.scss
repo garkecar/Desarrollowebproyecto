@@ -1,0 +1,10 @@
+// Mixin para transiciones
+@mixin transition($props...) {
+  transition: $props;
+}
+
+// Mixin para títulos centrados con color
+@mixin heading-style($color) {
+  text-align: center;
+  color: $color;
+}
